@@ -1,0 +1,168 @@
+button {
+    cursor: pointer;
+}
+
+#mainMenu {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+    margin: 0;
+}
+
+#mainMenu li {
+    float: right;
+    margin-right: 3%;
+    line-height: 90px;
+    font-size: 18px;
+}
+
+#mainMenu a {
+    text-decoration: none;
+}
+
+#mainMenu button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    font-size: 17px;
+}
+
+#chat {
+    display: none;
+    position: fixed;
+    top: 215px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 250px;
+    height: 420px;
+    max-width: 300px;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+}
+
+@media (min-width: 500px) {
+    #chat {
+        right: 50px;
+        left: auto;
+        transform: none;
+    }
+}
+
+#closeChat {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chat h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#chat p {
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#chat form {
+    margin-top: 20px;
+    align-items: center;
+}
+
+#chat form input {
+    height: 35px;
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#chat textarea {
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+#chat button {
+    height: 40px;
+    width: 240px;
+    border-radius: 20px;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.hidden {
+    display: none;
+}
+
+#tic {
+    position: relative; /* Add this to make sure the button stays within the container */
+}
+
+#start {
+    position: absolute; /* Add this to position the button independently */
+    top: 50%; /* Adjust the top position */
+    left: 50%; /* Adjust the left position */
+    transform: translate(-50%, -50%); /* Center the button */
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#board {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+  
+#board td {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+#reset {
+    display: block;
+    margin: auto; /* Center the button */
+    margin-top: 20px; /* Add some top margin for spacing */
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom : 40px;
+    right: 40px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: blueviolet;
+}
