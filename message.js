@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('chat').style.display = 'none';
     }
 
+    //redirecting to home page
+    if (performance.navigation.type === 2) {
+        var form = document.getElementById('chat');
+        if (form) {
+            form.style.display = 'none';
+        }
+
+        var thankYou = document.getElementById('thanks');
+        if (thankYou) {
+            thanks.style.display = 'block';
+            setTimeout(function() {
+                thankYou.style.display = 'none';
+            }, 15000);
+        }
+    }
+
     // dark mode
     function toggleDarkMode() {
         var modeIcon = document.getElementById('modeIcon');
