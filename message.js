@@ -140,9 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('ModeToggle').addEventListener('click', toggleDarkMode);
     document.getElementById('start').addEventListener('click', startGame);
     document.getElementById('restart').addEventListener('click', restartGame);
-
-    // to the top button
-    document.addEventListener('scroll', footerVisible);
     
     // to the top button
     var button = document.getElementById('backToTop');
