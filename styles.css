@@ -31,11 +31,17 @@ button {
 }
 
 footer {
+    display: none;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: blueviolet;
     padding: 20px;
+    transition: opacity 0.5s;
+}
+
+.showFooter {
+    display: block;
 }
 
 #socials {
