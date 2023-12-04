@@ -40,7 +40,7 @@ button {
 }
 
 footer {
-    position: absolute;
+    display: block;
     bottom: 0;
     width: 100%;
     background-color: blueviolet;
