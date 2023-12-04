@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var documentHeight = document.body.offsetHeight;
 
     if (scrollPosition >= documentHeight - window.innerHeight) {
-        footer.classList.add('show-footer');
+        footer.classList.add('showFooter');
     } else {
-        footer.classList.remove('show-footer');
+        footer.classList.remove('showFooter');
     }
 
     //redirecting to home page
