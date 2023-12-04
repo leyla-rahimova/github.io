@@ -154,9 +154,14 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('restart').addEventListener('click', restartGame);
 
     // to the top button
+    document.addEventListener('scroll', footerVisible);
+    
+    // to the top button
     var button = document.getElementById('backToTop');
 
-    document.addEventListener('scroll', footerVisible);
+    document.addEventListener('scroll', function() {
+        button.style.display = (window.scrollY > window.innerHeight) ? 'block' : 'none';
+    });
 
     button.addEventListener('click', function() {
         document.body.scrollTop = 0;
