@@ -40,18 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    var footer = document.querySelector('footer');
-    function footerVisible() {
-        var scrollPosition = window.innerHeight + window.scrollY;
-        var documentHeight = document.body.offsetHeight;
-
-        if (scrollPosition >= documentHeight - window.innerHeight) {
-            footer.style.opacity = 1;
-        } else {
-            footer.style.opacity = 0;
-        }
-    }
-
     // tic tac toe
     function startGame() {
         document.getElementById('start').style.display = 'none';
