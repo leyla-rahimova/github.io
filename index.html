@@ -14,90 +14,98 @@
     </head>
     <body>
         <div id = "container">
-            <menu id = "mainMenu">
-                <li id="ModeToggle"><i id = "modeIcon" class="bi bi-brightness-high"></i></li>
-                <li><a href = "#contact"><button id = "openChat" type = "button">Say Hi!</button></a></li>
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#home">Home</a></li>
-            </menu>
+            <div id = "wrap">
+                <menu id = "mainMenu">
+                    <li id="ModeToggle"><i id = "modeIcon" class="bi bi-brightness-high"></i></li>
+                    <li><a href = "#contact"><button id = "openChat" type = "button">Say Hi!</button></a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#home">Home</a></li>
+                </menu>
 
+                <footer id = "footer">
+                    <div id = "socials">
+                        <a href = "https://github.com/leyla-rahimova" target = "_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                        <a href = "https://www.linkedin.com/in/leyla-rahimova-2312b4201/" target = "_blank" rel="noopener"><i class = "bi bi-linkedin"></i></a>
+                    </div>
+                </footer>
+
+                <h1>Hi there! Welcome to my portfolio!</h1>
+                <h2>My name is Leyla. I am a programming rookie and enthusiast. Nice seeing you here!</h2>
+                
+                <!-- under construction notice -->
+                <b><h1 style = "color: red;">The website is still under construction though, so you might wanna check it out later :)</h1></b>
+                
+                        
+                <div>
+                    <button id = "start">Start the game!</button>
+                    <div id = "tic" class = "blur">
+                        <div id = "gameBoard" class = "hidden">
+                            <table id = "board">
+                                <tr>
+                                    <td onclick = "makeMove(this)"></td>
+                                    <td onclick = "makeMove(this)"></td>
+                                    <td onclick = "makeMove(this)"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick = "makeMove(this)"></td>
+                                    <td onclick = "makeMove(this)"></td>
+                                    <td onclick = "makeMove(this)"></td>
+                                </tr>
+                                <tr>
+                                    <td onclick = "makeMove(this)"></td>
+                                    <td onclick = "makeMove(this)"></td>
+                                    <td onclick = "makeMove(this)"></td>
+                                </tr>
+                            </table>
+                            <h3>Feel like you're losing? You don't have to...</h3>
+                            <button id = "restart">Restart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "chat">
+                    <div>
+                        <span id = "closeChat">&times;</span>
+                        <h2>Leave me a message</h2>
+                        <p>Hi there! Please fill out the form below to send me a message. Make sure to write your email, if you'd like a response.</p>
+                    </div>
+                    <form action = "https://formspree.io/f/xknlllga" method = "post">
+                        <input type = "text" name = "name" placeholder = "Your Name" required>
+                        <br>
+                        <input type = "text" name = "email" placeholder = "Email Address">
+                        <br>
+                        <input type = "text" name = "subject" placeholder = "Subject">
+                        <br>
+                        <textarea type = "text" name = "message" placeholder = "Write your message here..." required></textarea>
+                        <br>
+                        <button type = "submit">Send</button>
+                    </form>
+                    <div id = "thanks" style = "display: none;">
+                        <p>Your message is sent. Thank you for reaching out!</p>
+                    </div>
+                </div>
+
+                <!--extra content-->
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+                <p>1</p> <br><br><br><br><br><br><br><br><br>
+
+                <button id = "backToTop"><i class = "bi bi-arrow-up-circle-fill"></i></button>
+                </div>
             <footer id = "footer">
                 <div id = "socials">
                     <a href = "https://github.com/leyla-rahimova" target = "_blank" rel="noopener"><i class="bi bi-github"></i></a>
                     <a href = "https://www.linkedin.com/in/leyla-rahimova-2312b4201/" target = "_blank" rel="noopener"><i class = "bi bi-linkedin"></i></a>
                 </div>
             </footer>
-
-            <h1>Hi there! Welcome to my portfolio!</h1>
-            <h2>My name is Leyla. I am a programming rookie and enthusiast. Nice seeing you here!</h2>
-            
-            <!-- under construction notice -->
-            <b><h1 style = "color: red;">The website is still under construction though, so you might wanna check it out later :)</h1></b>
-            
-                    
-            <div>
-                <button id = "start">Start the game!</button>
-                <div id = "tic" class = "blur">
-                    <div id = "gameBoard" class = "hidden">
-                        <table id = "board">
-                            <tr>
-                                <td onclick = "makeMove(this)"></td>
-                                <td onclick = "makeMove(this)"></td>
-                                <td onclick = "makeMove(this)"></td>
-                            </tr>
-                            <tr>
-                                <td onclick = "makeMove(this)"></td>
-                                <td onclick = "makeMove(this)"></td>
-                                <td onclick = "makeMove(this)"></td>
-                            </tr>
-                            <tr>
-                                <td onclick = "makeMove(this)"></td>
-                                <td onclick = "makeMove(this)"></td>
-                                <td onclick = "makeMove(this)"></td>
-                            </tr>
-                        </table>
-                        <h3>Feel like you're losing? You don't have to...</h3>
-                        <button id = "restart">Restart</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id = "chat">
-                <div>
-                    <span id = "closeChat">&times;</span>
-                    <h2>Leave me a message</h2>
-                    <p>Hi there! Please fill out the form below to send me a message. Make sure to write your email, if you'd like a response.</p>
-                </div>
-                <form action = "https://formspree.io/f/xknlllga" method = "post">
-                    <input type = "text" name = "name" placeholder = "Your Name" required>
-                    <br>
-                    <input type = "text" name = "email" placeholder = "Email Address">
-                    <br>
-                    <input type = "text" name = "subject" placeholder = "Subject">
-                    <br>
-                    <textarea type = "text" name = "message" placeholder = "Write your message here..." required></textarea>
-                    <br>
-                    <button type = "submit">Send</button>
-                </form>
-                <div id = "thanks" style = "display: none;">
-                    <p>Your message is sent. Thank you for reaching out!</p>
-                </div>
-            </div>
-
-            <!--extra content-->
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-            <p>1</p> <br><br><br><br><br><br><br><br><br>
-
-            <button id = "backToTop"><i class = "bi bi-arrow-up-circle-fill"></i></button>
         </div>    
     </body>
 </html>
