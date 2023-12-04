@@ -5,6 +5,7 @@ button {
 #mainMenu {
     list-style: none;
     padding: 0;
+    width: 100%;
     overflow: hidden;
     background-color: aquamarine;
     margin: 0;
@@ -30,16 +31,19 @@ button {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: blueviolet;
     padding: 20px;
 }
 
 #socials {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 #socials a {
-    margin: 0 10px;
+    margin: 0 4%;
     color: white;
     text-decoration: none;
 }
@@ -128,14 +132,14 @@ footer {
 }
 
 #tic {
-    position: relative; /* Add this to make sure the button stays within the container */
+    position: relative;
 }
 
 #start {
-    position: absolute; /* Add this to position the button independently */
-    top: 50%; /* Adjust the top position */
-    left: 50%; /* Adjust the left position */
-    transform: translate(-50%, -50%); /* Center the button */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px 20px;
     border: 2px solid #333;
     border-radius: 20px;
@@ -160,8 +164,8 @@ footer {
   
 #reset {
     display: block;
-    margin: auto; /* Center the button */
-    margin-top: 20px; /* Add some top margin for spacing */
+    margin: auto;
+    margin-top: 20px;
     padding: 10px 20px;
     border: 2px solid #333;
     border-radius: 20px;
