@@ -1,3 +1,12 @@
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+article {
+    flex: 1;
+}
+
 button {
     cursor: pointer;
 }
