@@ -9,16 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('chat').style.display = 'none';
     }
 
-    var footer = document.querySelector('footer');
-    var scrollPosition = window.innerHeight + window.scrollY;
-    var documentHeight = document.body.offsetHeight;
-
-    if (scrollPosition >= documentHeight - window.innerHeight) {
-        footer.classList.add('showFooter');
-    } else {
-        footer.classList.remove('showFooter');
-    }
-
     //redirecting to home page
     if (performance.navigation.type === 2) {
         var form = document.getElementById('chat');
