@@ -39,12 +39,21 @@ button {
     font-size: 17px;
 }
 
-footer {
-    display: block;
-    top: 0;
+#container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: 2.5rem;
     background-color: blueviolet;
-    padding: 20px;
 }
 
 #socials {
