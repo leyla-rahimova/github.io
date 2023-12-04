@@ -29,6 +29,21 @@ button {
     font-size: 17px;
 }
 
+footer {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+#socials {
+    font-size: 30px;
+}
+
+#socials a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
 #chat {
     display: none;
     position: fixed;
