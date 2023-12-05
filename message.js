@@ -143,9 +143,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // to the top button
     var button = document.getElementById('backToTop');
+    var footer = document.getElementById('footer');
+    var footerHeight = footer.offsetHeight;
 
     document.addEventListener('scroll', function() {
-        button.style.display = (window.scrollY > window.innerHeight) ? 'block' : 'none';
+        var shouldDisplay = window.scrollY > window.innerHeight;
+        var shouldOverlapFooter = window.scrollY + window.innerHeight > document.body.offsetHeight - footerHeight;
+
+        button.style.display = shouldDisplay ? 'block' : 'none';
+
+        if (shouldOverlapFooter) {
+            button.style.bottom = (window.scrollY + window.innerHeight - (document.body.offsetHeight - footerHeight)) + 'px';
+        } else {
+            button.style.bottom = '40px';
+        }
     });
 
     button.addEventListener('click', function() {
