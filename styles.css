@@ -95,7 +95,7 @@ button {
 #socials {
     display: flex;
     flex: 1;
-    font-size: 20px;
+    font-size: 18px;
     justify-content: flex-end;
 }
 
