@@ -66,6 +66,12 @@ button {
     color: #ffbe0b;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 #container {
     position: relative;
     min-height: 100vh;
