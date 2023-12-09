@@ -38,12 +38,13 @@ button {
     overflow: hidden;
     background-color: #ADE8F4;
     margin: 0;
+    transition: background-color 0.7s ease, backdrop-filter 0.7s ease, color 0.7s ease;
 }
 
 #mainMenu.scrolled {
     background-color: #0095c7b8;
     backdrop-filter: blur(5px);
-
+    transition: background-color 0.7s ease, backdrop-filter 0.7s ease, color 0.7s ease;
 }
 
 #mainMenu.scrolled a {
