@@ -38,7 +38,7 @@ button {
     overflow: hidden;
     background-color: #ADE8F4;
     margin: 0;
-    transition: background-color 0.7s ease, backdrop-filter 0.7s ease, color 0.7s ease;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, color 0.3s ease;
 }
 
 #mainMenu.scrolled {
