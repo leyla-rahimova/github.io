@@ -42,7 +42,7 @@ button {
 }
 
 #mainMenu.scrolled {
-    background-color: #0095c7b8;
+    background-color: #0095c7c6;
     backdrop-filter: blur(5px);
     transition: background-color 0.7s ease, backdrop-filter 0.7s ease, color 0.7s ease;
 }
