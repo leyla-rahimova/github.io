@@ -40,6 +40,16 @@ button {
     margin: 0;
 }
 
+#mainMenu.scrolled {
+    background-color: #0095c7b8;
+    backdrop-filter: blur(5px);
+
+}
+
+#mainMenu.scrolled a {
+    color: white !important;
+}
+
 .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -142,7 +152,7 @@ button {
     border-radius: 25px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     #chat {
         right: 50px;
         left: auto;
