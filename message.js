@@ -40,6 +40,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function stickyMenu() {
+        var body = document.body;
+        var scrollY = document.scrollY;
+
+        if (scrollY > 0) {
+            body.classList.add('sticky');
+        } else {
+            body.classList.remove('sticky');
+        }
+    }
+
+    function menuColor() {
+        var menu = document.getElementById('mainMenu');
+        var scrollY = window.scrollY;
+
+        if (scrollY > 20) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    }
+
     // tic tac toe
     function startGame() {
         document.getElementById('start').style.display = 'none';
@@ -140,6 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('ModeToggle').addEventListener('click', toggleDarkMode);
     document.getElementById('start').addEventListener('click', startGame);
     document.getElementById('restart').addEventListener('click', restartGame);
+    document.getElementById('mainMenu').addEventListener('scroll', stickyMenu);
+    document.addEventListener('scroll', menuColor);
     
     // to the top button
     var button = document.getElementById('backToTop');
